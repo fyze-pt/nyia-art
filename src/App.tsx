@@ -98,16 +98,7 @@ export default function App() {
             className="flex items-center space-x-3 cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            <img 
-              src="/logonyia.png" 
-              alt="Nyia Logo" 
-              className="h-10 w-auto object-contain"
-              onError={(e) => {
-                // Fallback if logo file is not found
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.parentElement?.insertAdjacentHTML('afterbegin', '<span class="text-2xl font-serif tracking-widest uppercase nyia-gradient-text">Nyia Art</span>');
-              }}
-            />
+            <span className="text-2xl font-serif tracking-widest uppercase nyia-gradient-text">Nyia Art</span>
             <div className="flex flex-col items-start">
               <span className="text-xs font-light tracking-widest uppercase text-[#888]">Arte com Amor</span>
             </div>
@@ -508,7 +499,6 @@ export default function App() {
       <footer className="py-24 px-6 border-t border-nyia-cyan/10 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 relative z-10">
           <div className="flex items-center space-x-4">
-            <img src="/logonyia.png" alt="Nyia Logo" className="h-12 w-auto object-contain" onError={(e) => e.currentTarget.style.display = 'none'} />
             <span className="text-3xl font-serif tracking-widest uppercase nyia-gradient-text">Nyia Art</span>
           </div>
           <div className="flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-bold text-[#888]">
